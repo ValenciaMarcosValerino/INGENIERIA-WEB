@@ -1,0 +1,74 @@
+/* =========================================
+   RESET CSS BÁSICO
+   Elimina estilos por defecto del navegador
+   ========================================= */
+ 
+/* Elimina márgenes y rellenos por defecto */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/*content-box sirve para que el valor del ancho y largo sea el valor final de la pagina al igual se sugiere
+  ocupar esa propiedad para evitar el box model*/
+}
+ 
+/* Ajustes básicos del documento */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+ 
+/* Elimina estilos por defecto del body */
+body {
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+ 
+/* Elimina estilos de listas */
+ul,
+ol {
+  list-style: none;
+}
+ 
+/* Elimina subrayado y color por defecto en enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}/*con esta etiqueta podemos ir de una pagina a otra con un hipervinculo ademas de que el color lo estamos heredando de la etiqueta padre
+si es del body toma el color del body, si es de un parrafo el padre toma el color del parrafo*/
+ 
+/* Normaliza imágenes */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+ 
+/* Elimina estilos por defecto en botones e inputs */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+ 
+/* Evita que textarea cambie tamaño sin control */
+textarea {
+  resize: none;
+}
+ 
+/* Corrige comportamiento de tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*para hacer una pagina responsiva tengo que hacer una media */
